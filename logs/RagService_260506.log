@@ -1,0 +1,12 @@
+2026-05-06 16:24:54,899 - RagService - INFO - test_logger.py:3 - 信息日志
+2026-05-06 16:24:54,899 - RagService - ERROR - test_logger.py:4 - 错误日志
+2026-05-06 16:24:54,899 - RagService - WARNING - test_logger.py:5 - 警告日志
+2026-05-06 16:24:54,899 - RagService - DEBUG - test_logger.py:6 - 调试日志
+2026-05-06 16:24:55,963 - RagService - INFO - test_logger.py:3 - 信息日志
+2026-05-06 16:24:55,963 - RagService - ERROR - test_logger.py:4 - 错误日志
+2026-05-06 16:24:55,963 - RagService - WARNING - test_logger.py:5 - 警告日志
+2026-05-06 16:24:55,963 - RagService - DEBUG - test_logger.py:6 - 调试日志
+2026-05-06 16:25:01,100 - RagService - INFO - test_logger.py:3 - 信息日志
+2026-05-06 16:25:01,116 - RagService - ERROR - test_logger.py:4 - 错误日志
+2026-05-06 16:25:01,116 - RagService - WARNING - test_logger.py:5 - 警告日志
+2026-05-06 16:25:01,116 - RagService - DEBUG - test_logger.py:6 - 调试日志

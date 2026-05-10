@@ -1,0 +1,13 @@
+chat_model_name: qwen3-max
+embedding_model_name: text-embedding-v4
+
+vector_db_root: vector_dbs
+chunk_size: 300
+chunk_overlap: 50
+relevance_threshold: 0.4  # 检索相关性阈值
+search_k: 3               # 检索返回的文档数量
+
+knowledge_base_config:
+  1_credit_base: credit_base
+  2_overdue_debt: overdue_debt
+  3_risk_control: risk_control

@@ -1,0 +1,1253 @@
+2026-05-08 01:23:34,634 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 01:23:36,358 - RagService - INFO - vector_store.py:36 - [VectorStore] 初始化向量库: credit_base 路径: F:\Project\financial-rag-simple\vector_dbs\credit_base
+2026-05-08 01:23:36,421 - RagService - INFO - vector_store.py:36 - [VectorStore] 初始化向量库: overdue_debt 路径: F:\Project\financial-rag-simple\vector_dbs\overdue_debt
+2026-05-08 01:23:36,480 - RagService - INFO - vector_store.py:36 - [VectorStore] 初始化向量库: risk_control 路径: F:\Project\financial-rag-simple\vector_dbs\risk_control
+2026-05-08 01:23:36,480 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 01:23:36,481 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 01:23:36,483 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 01:23:36,484 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 01:23:36,485 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 01:23:36,486 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 01:23:36,487 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 01:23:36,488 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 01:23:36,489 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 01:23:36,489 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 01:23:36,491 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:23:36,491 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 01:23:36,492 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 01:23:36,494 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 01:23:36,494 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 01:23:36,495 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:23:36,496 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 01:23:36,497 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 01:23:36,498 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 01:23:36,499 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 01:23:37,357 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:38,049 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:38,727 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:39,372 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:39,981 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:40,619 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:41,269 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:41,853 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:42,440 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:43,045 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:43,686 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:44,336 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:44,975 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:45,594 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:46,278 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:46,881 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:47,484 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:48,119 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:48,736 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:49,404 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:50,072 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:50,710 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:51,351 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:52,007 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:52,655 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:53,329 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:53,999 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:54,678 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:55,338 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:23:55,944 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:23:56,573 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:23:57,246 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:23:57,901 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:23:58,514 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:23:59,112 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:23:59,768 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:24:00,420 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:24:01,076 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:24:01,740 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:24:02,417 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:24:03,062 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:24:03,750 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:04,416 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:05,067 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:05,712 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:06,397 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:07,075 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:07,771 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:08,394 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:09,079 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:09,703 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:10,305 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:24:10,892 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:25:26,655 - RagService - INFO - rag_service.py:56 - [RAGService] 用户提问: 我是学生，可以申请贷款吗
+2026-05-08 01:25:26,655 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以申请贷款吗
+2026-05-08 01:25:26,655 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 01:27:35,081 - RagService - ERROR - rag_service.py:93 - [RAGService] 生成回答失败: Request timed out.
+2026-05-08 01:31:46,278 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 01:31:49,581 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 01:31:51,095 - RagService - INFO - vector_store.py:36 - [VectorStore] 初始化向量库: credit_base 路径: F:\Project\financial-rag-simple\vector_dbs\credit_base
+2026-05-08 01:31:51,109 - RagService - INFO - vector_store.py:36 - [VectorStore] 初始化向量库: overdue_debt 路径: F:\Project\financial-rag-simple\vector_dbs\overdue_debt
+2026-05-08 01:31:51,122 - RagService - INFO - vector_store.py:36 - [VectorStore] 初始化向量库: risk_control 路径: F:\Project\financial-rag-simple\vector_dbs\risk_control
+2026-05-08 01:31:51,123 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 01:31:51,123 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 01:31:51,124 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 01:31:51,124 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 01:31:51,125 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 01:31:51,125 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 01:31:51,126 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 01:31:51,126 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 01:31:51,127 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 01:31:51,127 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 01:31:51,127 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:31:51,128 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 01:31:51,128 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 01:31:51,129 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 01:31:51,129 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 01:31:51,130 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:31:51,130 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 01:31:51,130 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 01:31:51,131 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 01:31:51,132 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 01:31:52,237 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:52,940 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:53,644 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:54,369 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:55,044 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:55,688 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:56,318 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:57,019 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:57,714 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:58,330 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:58,940 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:31:59,604 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:00,287 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:00,924 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:01,606 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:02,219 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:02,847 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:03,496 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:04,118 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:04,786 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:05,405 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:06,087 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:06,749 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:07,400 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:08,073 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:08,702 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:09,314 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:09,970 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:10,584 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 credit_base 添加 1 个文档
+2026-05-08 01:32:11,183 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:11,808 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:12,473 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:13,117 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:13,763 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:14,404 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:14,988 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:15,600 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:16,234 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:16,865 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:17,749 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:18,338 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 overdue_debt 添加 1 个文档
+2026-05-08 01:32:18,988 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:19,643 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:20,294 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:20,906 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:21,553 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:22,176 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:22,870 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:23,528 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:24,170 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:24,859 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:25,506 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:26,139 - RagService - INFO - vector_store.py:47 - [VectorStore] 已向 risk_control 添加 1 个文档
+2026-05-08 01:32:55,914 - RagService - INFO - rag_service.py:56 - [RAGService] 用户提问: 我是学生可以申请贷款吗
+2026-05-08 01:32:55,914 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生可以申请贷款吗
+2026-05-08 01:32:55,914 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 01:35:04,218 - RagService - ERROR - rag_service.py:93 - [RAGService] 生成回答失败: Request timed out.
+2026-05-08 01:42:17,259 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 01:42:36,929 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 01:42:37,990 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 01:42:37,990 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 01:42:37,991 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 01:42:37,991 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 01:42:37,992 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 01:42:37,992 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 01:42:37,992 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 01:42:37,992 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 01:42:37,993 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 01:42:37,993 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 01:42:37,993 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 01:42:37,994 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:42:37,994 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 01:42:37,994 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 01:42:37,994 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 01:42:37,994 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 01:42:37,995 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:42:37,995 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 01:42:37,995 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 01:42:37,995 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 01:42:37,997 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 01:42:38,003 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 01:42:38,880 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:20,002 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 01:44:21,002 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 01:44:21,002 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 01:44:21,002 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 01:44:21,003 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 01:44:21,003 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 01:44:21,003 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 01:44:21,003 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 01:44:21,003 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 01:44:21,003 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 01:44:21,004 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 01:44:21,004 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 01:44:21,004 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:44:21,005 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 01:44:21,005 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 01:44:21,005 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 01:44:21,005 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 01:44:21,006 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:44:21,006 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 01:44:21,006 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 01:44:21,006 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 01:44:21,007 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 01:44:21,007 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 01:44:21,909 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:22,537 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:23,193 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:23,866 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:24,560 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:25,261 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:25,917 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:26,638 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:27,338 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:28,028 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:28,697 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:29,419 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:30,117 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:30,793 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:31,440 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:32,172 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:32,823 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:33,563 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:34,377 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:35,037 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:35,710 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:36,955 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:37,863 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:38,735 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:39,416 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:40,427 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:41,039 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:41,686 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:42,272 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:42,272 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 01:44:43,584 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:44,691 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:45,636 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:46,802 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:47,891 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:48,868 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:49,933 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:50,933 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:51,988 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:52,979 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:54,010 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:54,784 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:54,784 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 01:44:55,495 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:56,095 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:56,737 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:57,412 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:58,034 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:58,660 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:59,255 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:44:59,857 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:45:00,490 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:45:01,182 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:45:01,807 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:45:02,461 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:46:04,333 - RagService - INFO - rag_service.py:56 - [RAGService] 用户提问: 我是学生，可以申请贷款吗
+2026-05-08 01:46:04,333 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以申请贷款吗
+2026-05-08 01:46:04,333 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 01:48:12,700 - RagService - ERROR - rag_service.py:93 - [RAGService] 生成回答失败: Request timed out.
+2026-05-08 01:50:09,638 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 01:50:19,211 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 01:50:20,288 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 01:50:20,288 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 01:50:20,289 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 01:50:20,290 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 01:50:20,290 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 01:50:20,290 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 01:50:20,291 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 01:50:20,291 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 01:50:20,291 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 01:50:20,291 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 01:50:20,291 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 01:50:20,292 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:50:20,292 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 01:50:20,293 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 01:50:20,293 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 01:50:20,293 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 01:50:20,294 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:50:20,294 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 01:50:20,294 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 01:50:20,295 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 01:50:20,295 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 01:50:20,295 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 01:50:21,186 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:21,955 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:22,630 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:23,315 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:24,011 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:24,686 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:25,345 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:26,049 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:26,736 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:27,430 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:28,110 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:28,791 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:29,506 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:30,193 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:30,869 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:31,549 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:32,239 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:32,918 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:33,576 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:34,283 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:34,975 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:35,677 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:36,347 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:37,041 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:37,684 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:38,358 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:39,015 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:39,692 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:40,375 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:40,376 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 01:50:41,066 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:41,754 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:42,463 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:43,130 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:43,957 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:44,643 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:45,325 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:46,018 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:46,669 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:47,371 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:48,066 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:48,730 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:48,731 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 01:50:49,390 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:50,083 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:50,753 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:51,467 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:52,149 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:52,827 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:53,471 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:54,151 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:54,871 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:55,895 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:56,540 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:50:57,207 - RagService - INFO - vector_store.py:67 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 01:51:17,468 - RagService - INFO - rag_service.py:56 - [RAGService] 用户提问: 我是学生，可以申请贷款吗
+2026-05-08 01:51:17,468 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以申请贷款吗
+2026-05-08 01:51:17,468 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 01:53:25,845 - RagService - ERROR - rag_service.py:93 - [RAGService] 生成回答失败: Request timed out.
+2026-05-08 01:55:49,050 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 01:55:56,060 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 01:55:57,157 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 01:55:57,157 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 01:55:57,157 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 01:55:57,158 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 01:55:57,159 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 01:55:57,159 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 01:55:57,159 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 01:55:57,160 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 01:55:57,160 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 01:55:57,160 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 01:55:57,160 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 01:55:57,161 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:55:57,161 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 01:55:57,161 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 01:55:57,161 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 01:55:57,162 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 01:55:57,162 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:55:57,162 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 01:55:57,163 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 01:55:57,163 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 01:55:57,164 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 01:55:57,164 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 01:55:57,237 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,237 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,238 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,239 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,240 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 01:55:57,268 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,268 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,268 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,268 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,268 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,269 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,292 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,293 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,293 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,293 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:55:57,293 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:56:10,472 - RagService - INFO - rag_service.py:56 - [RAGService] 用户提问: 我是学生，可以申请贷款吗
+2026-05-08 01:56:10,472 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以申请贷款吗
+2026-05-08 01:56:10,472 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 01:57:58,000 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 01:58:00,188 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 01:58:01,226 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 01:58:01,226 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 01:58:01,226 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 01:58:01,227 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 01:58:01,228 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 01:58:01,228 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 01:58:01,228 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 01:58:01,229 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 01:58:01,229 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 01:58:01,229 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 01:58:01,229 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 01:58:01,230 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:58:01,230 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 01:58:01,231 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 01:58:01,231 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 01:58:01,231 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 01:58:01,232 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 01:58:01,232 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 01:58:01,232 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 01:58:01,232 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 01:58:01,234 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 01:58:01,234 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 01:58:01,305 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,305 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,305 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,305 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,305 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,305 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,306 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,307 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,307 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,307 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,307 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,307 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,307 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,332 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 01:58:01,347 - RagService - ERROR - vector_store.py:71 - [VectorStore] 写入向量库失败: 'Chroma' object has no attribute 'add_documents_with_ids'
+2026-05-08 02:01:38,917 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 02:01:41,041 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 02:01:42,106 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:01:42,106 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 02:01:42,107 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 02:01:42,108 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 02:01:42,108 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 02:01:42,108 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 02:01:42,108 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 02:01:42,109 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 02:01:42,109 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 02:01:42,109 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 02:01:42,109 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 02:01:42,110 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 02:01:42,110 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 02:01:42,111 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 02:01:42,111 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 02:01:42,111 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 02:01:42,112 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 02:01:42,112 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 02:01:42,112 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 02:01:42,113 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 02:01:42,113 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 02:01:42,113 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 02:01:43,004 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:43,656 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:44,304 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:44,946 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:45,599 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:46,279 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:46,882 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:47,528 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:48,214 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:48,976 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:49,601 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:50,264 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:50,892 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:51,533 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:52,166 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:52,882 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:53,575 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:54,190 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:54,805 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:55,455 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:56,135 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:56,775 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:57,432 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:58,120 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:58,775 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:01:59,441 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:00,102 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:00,722 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:01,380 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:01,381 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 02:02:02,000 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:02,654 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:03,311 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:04,484 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:05,155 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:05,776 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:06,466 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:07,141 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:07,737 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:08,409 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:09,059 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:09,700 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:09,700 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 02:02:10,385 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:11,058 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:11,744 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:12,373 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:13,048 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:13,659 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:14,355 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:15,027 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:15,702 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:16,375 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:17,047 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:17,683 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:25,019 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 02:02:28,616 - RagService - INFO - main.py:6 - === 金融风控 RAG 系统启动 ===
+2026-05-08 02:02:29,665 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:02:29,665 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 02:02:29,665 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 1_credit_base
+2026-05-08 02:02:29,666 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：6 个
+2026-05-08 02:02:29,667 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 准入基本条件.md (共 1 页/段)
+2026-05-08 02:02:29,667 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 申请材料要求.md (共 1 页/段)
+2026-05-08 02:02:29,667 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 禁止准入名单.md (共 1 页/段)
+2026-05-08 02:02:29,668 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则.md (共 1 页/段)
+2026-05-08 02:02:29,668 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 利率费率规则.md (共 1 页/段)
+2026-05-08 02:02:29,668 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 授信额度规则2.md (共 1 页/段)
+2026-05-08 02:02:29,668 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 2_overdue_debt
+2026-05-08 02:02:29,669 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 02:02:29,669 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 逾期分级定义.md (共 1 页/段)
+2026-05-08 02:02:29,670 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 催收管理规则.md (共 1 页/段)
+2026-05-08 02:02:29,670 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 罚息与减免政策.md (共 1 页/段)
+2026-05-08 02:02:29,670 - RagService - INFO - knowledge_base.py:37 - [KnowledgeBase] 正在处理目录: 3_risk_control
+2026-05-08 02:02:29,671 - RagService - INFO - file_handler.py:59 - [FileScan] 扫描完成，找到有效文件：3 个
+2026-05-08 02:02:29,671 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 风控准入规则.md (共 1 页/段)
+2026-05-08 02:02:29,671 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 反欺诈规则.md (共 1 页/段)
+2026-05-08 02:02:29,671 - RagService - INFO - file_handler.py:87 - [FileLoad] 加载成功: 合规监管规则.md (共 1 页/段)
+2026-05-08 02:02:29,672 - RagService - INFO - knowledge_base.py:49 - [KnowledgeBase] 文档切片完成，共生成 53 个文本块
+2026-05-08 02:02:29,672 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 02:02:30,569 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:31,203 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:31,904 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:32,591 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:33,266 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:33,881 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:34,526 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:35,234 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:36,215 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:37,290 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:37,994 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:38,761 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:39,594 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:40,234 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:40,915 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:41,566 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:42,382 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:43,416 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:44,590 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:45,625 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:46,642 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:47,620 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:48,610 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:49,618 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:50,579 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:51,610 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:52,629 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:53,614 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:54,624 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 credit_base 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:54,624 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 02:02:55,598 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:56,646 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:57,844 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:58,817 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:02:59,872 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:00,889 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:01,990 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:03,020 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:03,999 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:05,053 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:06,249 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:07,326 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:07,326 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 02:03:08,424 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:09,458 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:10,524 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:11,588 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:12,795 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:13,770 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:14,739 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:15,696 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:16,805 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:17,855 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:18,877 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:03:19,867 - RagService - INFO - vector_store.py:69 - [VectorStore] 已向 risk_control 写入/更新 1 个文档 (去重模式)
+2026-05-08 02:14:33,833 - RagService - INFO - main.py:21 - === 系统关闭 ===
+2026-05-08 02:14:39,344 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:14:39,344 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 02:15:53,042 - RagService - WARNING - build_knowledge_base.py:40 - [BuildScript] 无法动态修正路径，请检查 service/knowledge_base.py
+2026-05-08 02:15:53,043 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:15:53,043 - RagService - INFO - knowledge_base.py:26 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 02:19:31,271 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 02:19:32,339 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:19:32,339 - RagService - INFO - rag_service.py:26 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 02:19:55,318 - RagService - INFO - rag_service.py:30 - [RAGService] 用户提问: 我是学生我可以贷款吗
+2026-05-08 02:19:55,318 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生我可以贷款吗
+2026-05-08 02:19:55,318 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 02:20:14,331 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 02:20:15,382 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:20:15,382 - RagService - INFO - rag_service.py:26 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 02:20:42,938 - RagService - INFO - rag_service.py:30 - [RAGService] 用户提问: 我是学生，我可以申请贷款吗
+2026-05-08 02:20:42,938 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，我可以申请贷款吗
+2026-05-08 02:20:42,938 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 02:20:42,938 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 02:22:51,549 - RagService - ERROR - rag_service.py:67 - [RAGService] 生成回答失败: Request timed out.
+2026-05-08 02:25:02,723 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 02:25:03,014 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:25:03,015 - RagService - INFO - rag_service.py:26 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 02:25:31,673 - RagService - INFO - rag_service.py:30 - [RAGService] 用户提问: 我是学生，可以申请贷款吗
+2026-05-08 02:25:31,673 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以申请贷款吗
+2026-05-08 02:25:31,673 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 02:25:31,674 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 02:25:35,721 - RagService - INFO - rag_service.py:64 - [RAGService] 生成回答完成
+2026-05-08 02:26:07,071 - RagService - INFO - rag_service.py:30 - [RAGService] 用户提问: 贷款额度有多少
+2026-05-08 02:26:07,071 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 贷款额度有多少
+2026-05-08 02:26:07,071 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '额度' -> 库: credit_base
+2026-05-08 02:26:19,919 - RagService - INFO - rag_service.py:64 - [RAGService] 生成回答完成
+2026-05-08 02:28:27,235 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 02:28:27,501 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 02:28:27,501 - RagService - INFO - rag_service.py:26 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 02:28:50,713 - RagService - INFO - rag_service.py:30 - [RAGService] 用户提问: 我是学生，可以申请贷款吗
+2026-05-08 02:28:50,713 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以申请贷款吗
+2026-05-08 02:28:50,713 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 02:28:50,713 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 02:28:52,862 - RagService - INFO - rag_service.py:64 - [RAGService] 生成回答完成
+2026-05-08 02:34:58,658 - RagService - INFO - build_knowledge_base.py:31 - 🚀 开始构建金融风控知识库...
+2026-05-08 02:34:58,999 - RagService - INFO - build_knowledge_base.py:41 - ✅ Embedding 模型初始化成功
+2026-05-08 11:48:15,226 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 11:48:15,605 - RagService - INFO - vector_store.py:30 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 11:48:15,605 - RagService - INFO - rag_service.py:26 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 11:48:54,908 - RagService - INFO - rag_service.py:30 - [RAGService] 用户提问: 我是学生可以申请贷款那
+2026-05-08 11:48:54,908 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生可以申请贷款那
+2026-05-08 11:48:54,908 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 11:48:54,908 - RagService - INFO - vector_store.py:43 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 11:48:57,228 - RagService - INFO - rag_service.py:64 - [RAGService] 生成回答完成
+2026-05-08 11:49:15,341 - RagService - INFO - rag_service.py:30 - [RAGService] 用户提问: 你好
+2026-05-08 11:49:15,341 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 你好
+2026-05-08 11:49:15,341 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 11:49:16,409 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: credit_base
+2026-05-08 11:49:18,291 - RagService - INFO - rag_service.py:64 - [RAGService] 生成回答完成
+2026-05-08 12:21:30,787 - RagService - INFO - build_db.py:18 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:21:31,331 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:21:31,331 - RagService - INFO - knowledge_base.py:29 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 12:24:44,304 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:24:44,631 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:24:44,631 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 12:25:40,417 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:25:40,717 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:25:40,718 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 12:25:40,718 - RagService - INFO - knowledge_base.py:29 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 12:32:17,930 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:32:18,258 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:32:18,258 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 12:32:18,258 - RagService - INFO - knowledge_base.py:21 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 12:36:41,799 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:36:42,113 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:36:42,113 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 12:36:42,113 - RagService - INFO - knowledge_base.py:21 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 12:36:42,113 - RagService - INFO - knowledge_base.py:32 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 12:36:42,113 - RagService - INFO - knowledge_base.py:49 - 🔍 扫描知识库目录结构:
+2026-05-08 12:36:42,114 - RagService - INFO - knowledge_base.py:54 -   ├─ 1_credit_base/
+2026-05-08 12:36:42,114 - RagService - INFO - knowledge_base.py:59 -   │  └─ [✅ 有效知识库] → 将存入: credit_base
+2026-05-08 12:36:42,114 - RagService - INFO - knowledge_base.py:54 -   ├─ 2_overdue_debt/
+2026-05-08 12:36:42,114 - RagService - INFO - knowledge_base.py:59 -   │  └─ [✅ 有效知识库] → 将存入: overdue_debt
+2026-05-08 12:36:42,114 - RagService - INFO - knowledge_base.py:54 -   ├─ 3_risk_control/
+2026-05-08 12:36:42,114 - RagService - INFO - knowledge_base.py:59 -   │  └─ [✅ 有效知识库] → 将存入: risk_control
+2026-05-08 12:36:42,114 - RagService - WARNING - knowledge_base.py:94 - ⚠️ 未找到任何有效文档，请检查目录结构
+2026-05-08 12:36:42,114 - RagService - WARNING - build_db.py:58 - ⚠️ 未生成任何文本块，请检查源文件是否为空或格式不支持。
+2026-05-08 12:40:36,692 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:40:37,013 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:40:37,013 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 12:40:37,013 - RagService - INFO - knowledge_base.py:18 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 12:40:37,013 - RagService - INFO - knowledge_base.py:22 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\scripts\data\finance_rag_knowledge
+2026-05-08 12:40:37,013 - RagService - ERROR - knowledge_base.py:27 - ❌ 知识库源文件夹不存在: F:\Project\financial-rag-simple\scripts\data\finance_rag_knowledge
+2026-05-08 12:46:18,083 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:46:18,408 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:46:18,408 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 12:46:18,408 - RagService - INFO - knowledge_base.py:18 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 12:46:18,408 - RagService - INFO - knowledge_base.py:23 - [KnowledgeBase] 实际读取路径: data/finance_rag_knowledge
+2026-05-08 12:46:18,408 - RagService - ERROR - knowledge_base.py:28 - ❌ 知识库源文件夹不存在: data/finance_rag_knowledge
+2026-05-08 12:50:36,070 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 12:50:36,356 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 12:50:36,356 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 12:50:36,356 - RagService - INFO - knowledge_base.py:18 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 12:50:36,356 - RagService - INFO - knowledge_base.py:23 - [KnowledgeBase] 实际读取路径: data/finance_rag_knowledge
+2026-05-08 12:50:36,356 - RagService - ERROR - knowledge_base.py:28 - ❌ 知识库源文件夹不存在: data/finance_rag_knowledge
+2026-05-08 14:16:58,990 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 14:16:59,338 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 14:16:59,338 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 14:16:59,338 - RagService - INFO - knowledge_base.py:18 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 14:16:59,338 - RagService - INFO - knowledge_base.py:31 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 14:16:59,338 - RagService - INFO - knowledge_base.py:41 - 🔍 扫描知识库目录结构 (支持三级嵌套):
+2026-05-08 14:16:59,339 - RagService - INFO - knowledge_base.py:56 -   ├─ [📚 credit_base] 1_credit_base/
+2026-05-08 14:16:59,339 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 1_1_apply_rule/
+2026-05-08 14:16:59,345 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 准入基本条件.md
+2026-05-08 14:16:59,346 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 申请材料要求.md
+2026-05-08 14:16:59,347 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 禁止准入名单.md
+2026-05-08 14:16:59,347 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 1_2_quota_rule/
+2026-05-08 14:16:59,348 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 授信额度规则.md
+2026-05-08 14:16:59,348 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 1_3_fee_rate/
+2026-05-08 14:16:59,349 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 利率费率规则.md
+2026-05-08 14:16:59,350 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 授信额度规则2.md
+2026-05-08 14:16:59,350 - RagService - INFO - knowledge_base.py:56 -   ├─ [📚 overdue_debt] 2_overdue_debt/
+2026-05-08 14:16:59,350 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 2_1_overdue_define/
+2026-05-08 14:16:59,351 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 逾期分级定义.md
+2026-05-08 14:16:59,351 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 2_2_collect_rule/
+2026-05-08 14:16:59,353 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 催收管理规则.md
+2026-05-08 14:16:59,353 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 2_3_penalty_relief/
+2026-05-08 14:16:59,354 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 罚息与减免政策.md
+2026-05-08 14:16:59,354 - RagService - INFO - knowledge_base.py:56 -   ├─ [📚 risk_control] 3_risk_control/
+2026-05-08 14:16:59,354 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 3_1_risk_access/
+2026-05-08 14:16:59,355 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 风控准入规则.md
+2026-05-08 14:16:59,355 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 3_2_fraud_prevent/
+2026-05-08 14:16:59,356 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 反欺诈规则.md
+2026-05-08 14:16:59,356 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 3_3_compliance_rule/
+2026-05-08 14:16:59,356 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 合规监管规则.md
+2026-05-08 14:16:59,356 - RagService - INFO - knowledge_base.py:112 - ✅ 加载 12 个文档，开始切片...
+2026-05-08 14:16:59,358 - RagService - INFO - knowledge_base.py:118 - ✂️ 切片完成，生成 96 个文本块
+2026-05-08 14:16:59,358 - RagService - INFO - build_db.py:61 - ✅ 文档切片完成，共生成 96 个文本块。
+2026-05-08 14:16:59,358 - RagService - INFO - build_db.py:67 - 正在写入向量库 [financial_db] ...
+2026-05-08 14:22:42,589 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 14:22:42,899 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 14:22:42,899 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 14:22:42,899 - RagService - INFO - knowledge_base.py:18 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 14:22:42,899 - RagService - INFO - knowledge_base.py:31 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 14:22:42,899 - RagService - INFO - knowledge_base.py:41 - 🔍 扫描知识库目录结构 (支持三级嵌套):
+2026-05-08 14:22:42,900 - RagService - INFO - knowledge_base.py:56 -   ├─ [📚 credit_base] 1_credit_base/
+2026-05-08 14:22:42,900 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 1_1_apply_rule/
+2026-05-08 14:22:42,900 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 准入基本条件.md
+2026-05-08 14:22:42,900 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 申请材料要求.md
+2026-05-08 14:22:42,901 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 禁止准入名单.md
+2026-05-08 14:22:42,901 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 1_2_quota_rule/
+2026-05-08 14:22:42,901 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 授信额度规则.md
+2026-05-08 14:22:42,901 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 1_3_fee_rate/
+2026-05-08 14:22:42,901 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 利率费率规则.md
+2026-05-08 14:22:42,902 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 授信额度规则2.md
+2026-05-08 14:22:42,902 - RagService - INFO - knowledge_base.py:56 -   ├─ [📚 overdue_debt] 2_overdue_debt/
+2026-05-08 14:22:42,902 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 2_1_overdue_define/
+2026-05-08 14:22:42,902 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 逾期分级定义.md
+2026-05-08 14:22:42,902 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 2_2_collect_rule/
+2026-05-08 14:22:42,902 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 催收管理规则.md
+2026-05-08 14:22:42,903 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 2_3_penalty_relief/
+2026-05-08 14:22:42,903 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 罚息与减免政策.md
+2026-05-08 14:22:42,903 - RagService - INFO - knowledge_base.py:56 -   ├─ [📚 risk_control] 3_risk_control/
+2026-05-08 14:22:42,903 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 3_1_risk_access/
+2026-05-08 14:22:42,903 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 风控准入规则.md
+2026-05-08 14:22:42,903 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 3_2_fraud_prevent/
+2026-05-08 14:22:42,904 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 反欺诈规则.md
+2026-05-08 14:22:42,904 - RagService - INFO - knowledge_base.py:65 -   │  ├─ [📁 规则组] 3_3_compliance_rule/
+2026-05-08 14:22:42,904 - RagService - INFO - knowledge_base.py:93 -   │  │  └─ [📄 已加载] 合规监管规则.md
+2026-05-08 14:22:42,904 - RagService - INFO - knowledge_base.py:112 - ✅ 加载 12 个文档，开始切片...
+2026-05-08 14:22:42,905 - RagService - INFO - knowledge_base.py:118 - ✂️ 切片完成，生成 96 个文本块
+2026-05-08 14:22:42,905 - RagService - INFO - build_db.py:61 - ✅ 文档切片完成，共生成 96 个文本块。
+2026-05-08 14:22:42,905 - RagService - INFO - build_db.py:67 - 正在写入向量库 [financial_db] ...
+2026-05-08 14:22:42,905 - RagService - ERROR - vector_store.py:36 - [VectorStore] 无效的分类键: financial_db
+2026-05-08 14:22:42,905 - RagService - INFO - build_db.py:73 - 🎉 知识库构建完成！
+2026-05-08 14:23:06,688 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 14:23:06,932 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 14:23:06,932 - RagService - INFO - rag_service.py:31 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 14:23:19,758 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生我可以申请贷款吗
+2026-05-08 14:23:19,758 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生我可以申请贷款吗
+2026-05-08 14:23:19,758 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 14:23:19,758 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 14:23:30,719 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:09:17,503 - RagService - INFO - build_db.py:33 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:09:17,777 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:09:17,777 - RagService - INFO - build_db.py:52 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 15:09:17,777 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:09:17,777 - RagService - INFO - knowledge_base.py:33 - [KnowledgeBase] 实际读取路径: F:\data\finance_rag_knowledge
+2026-05-08 15:09:17,777 - RagService - ERROR - knowledge_base.py:38 - ❌ 知识库源文件夹不存在: F:\data\finance_rag_knowledge
+2026-05-08 15:18:33,934 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:18:34,267 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:18:34,267 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 15:18:34,267 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:18:34,267 - RagService - INFO - knowledge_base.py:33 - [KnowledgeBase] 实际读取路径: F:\data\finance_rag_knowledge
+2026-05-08 15:18:34,267 - RagService - ERROR - knowledge_base.py:38 - ❌ 知识库源文件夹不存在: F:\data\finance_rag_knowledge
+2026-05-08 15:21:20,654 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:21:20,948 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:21:20,948 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data\finance_rag_knowledge 读取文档...
+2026-05-08 15:21:20,948 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:21:20,948 - RagService - INFO - knowledge_base.py:34 - [KnowledgeBase] 实际读取路径: F:/data/finance_rag_knowledge
+2026-05-08 15:21:20,948 - RagService - ERROR - knowledge_base.py:39 - ❌ 知识库源文件夹不存在: F:/data/finance_rag_knowledge
+2026-05-08 15:29:15,281 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:29:15,598 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:29:15,599 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data/finance_rag_knowledge 读取文档...
+2026-05-08 15:29:15,599 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:29:15,599 - RagService - INFO - knowledge_base.py:35 - [KnowledgeBase] 实际读取路径: F:\data\finance_rag_knowledge
+2026-05-08 15:29:15,599 - RagService - ERROR - knowledge_base.py:40 - ❌ 知识库源文件夹不存在: F:\data\finance_rag_knowledge
+2026-05-08 15:30:55,919 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:30:56,196 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:30:56,196 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data/finance_rag_knowledge 读取文档...
+2026-05-08 15:30:56,196 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:30:56,196 - RagService - INFO - knowledge_base.py:35 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 15:30:56,196 - RagService - INFO - knowledge_base.py:45 - 🔍 扫描知识库目录结构 (支持三级嵌套):
+2026-05-08 15:30:56,196 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 credit_base] 1_credit_base/
+2026-05-08 15:30:56,197 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_1_apply_rule/
+2026-05-08 15:30:56,197 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 准入基本条件.md
+2026-05-08 15:30:56,197 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 申请材料要求.md
+2026-05-08 15:30:56,197 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 禁止准入名单.md
+2026-05-08 15:30:56,198 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_2_quota_rule/
+2026-05-08 15:30:56,198 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则.md
+2026-05-08 15:30:56,198 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_3_fee_rate/
+2026-05-08 15:30:56,198 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 利率费率规则.md
+2026-05-08 15:30:56,198 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则2.md
+2026-05-08 15:30:56,199 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 overdue_debt] 2_overdue_debt/
+2026-05-08 15:30:56,199 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_1_overdue_define/
+2026-05-08 15:30:56,199 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 逾期分级定义.md
+2026-05-08 15:30:56,199 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_2_collect_rule/
+2026-05-08 15:30:56,199 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 催收管理规则.md
+2026-05-08 15:30:56,199 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_3_penalty_relief/
+2026-05-08 15:30:56,200 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 罚息与减免政策.md
+2026-05-08 15:30:56,200 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 risk_control] 3_risk_control/
+2026-05-08 15:30:56,200 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_1_risk_access/
+2026-05-08 15:30:56,200 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 风控准入规则.md
+2026-05-08 15:30:56,200 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_2_fraud_prevent/
+2026-05-08 15:30:56,201 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 反欺诈规则.md
+2026-05-08 15:30:56,201 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_3_compliance_rule/
+2026-05-08 15:30:56,201 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 合规监管规则.md
+2026-05-08 15:30:56,201 - RagService - INFO - knowledge_base.py:116 - ✅ 加载 12 个文档，开始切片...
+2026-05-08 15:30:56,202 - RagService - INFO - knowledge_base.py:122 - ✂️ 切片完成，生成 96 个文本块
+2026-05-08 15:30:56,203 - RagService - INFO - build_db.py:64 - ✅ 文档切片完成，共生成 96 个文本块。
+2026-05-08 15:30:56,203 - RagService - INFO - build_db.py:70 - 正在写入向量库 [financial_db] ...
+2026-05-08 15:30:56,203 - RagService - ERROR - vector_store.py:36 - [VectorStore] 无效的分类键: financial_db
+2026-05-08 15:30:56,203 - RagService - INFO - build_db.py:76 - 🎉 知识库构建完成！
+2026-05-08 15:32:16,397 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:32:16,682 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:32:16,682 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data/finance_rag_knowledge 读取文档...
+2026-05-08 15:32:16,682 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:32:16,682 - RagService - INFO - knowledge_base.py:35 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 15:32:16,683 - RagService - INFO - knowledge_base.py:45 - 🔍 扫描知识库目录结构 (支持三级嵌套):
+2026-05-08 15:32:16,683 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 credit_base] 1_credit_base/
+2026-05-08 15:32:16,683 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_1_apply_rule/
+2026-05-08 15:32:16,683 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 准入基本条件.md
+2026-05-08 15:32:16,684 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 申请材料要求.md
+2026-05-08 15:32:16,684 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 禁止准入名单.md
+2026-05-08 15:32:16,684 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_2_quota_rule/
+2026-05-08 15:32:16,684 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则.md
+2026-05-08 15:32:16,684 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_3_fee_rate/
+2026-05-08 15:32:16,685 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 利率费率规则.md
+2026-05-08 15:32:16,685 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则2.md
+2026-05-08 15:32:16,685 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 overdue_debt] 2_overdue_debt/
+2026-05-08 15:32:16,685 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_1_overdue_define/
+2026-05-08 15:32:16,686 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 逾期分级定义.md
+2026-05-08 15:32:16,686 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_2_collect_rule/
+2026-05-08 15:32:16,686 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 催收管理规则.md
+2026-05-08 15:32:16,686 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_3_penalty_relief/
+2026-05-08 15:32:16,686 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 罚息与减免政策.md
+2026-05-08 15:32:16,686 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 risk_control] 3_risk_control/
+2026-05-08 15:32:16,687 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_1_risk_access/
+2026-05-08 15:32:16,687 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 风控准入规则.md
+2026-05-08 15:32:16,687 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_2_fraud_prevent/
+2026-05-08 15:32:16,687 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 反欺诈规则.md
+2026-05-08 15:32:16,687 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_3_compliance_rule/
+2026-05-08 15:32:16,688 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 合规监管规则.md
+2026-05-08 15:32:16,688 - RagService - INFO - knowledge_base.py:116 - ✅ 加载 12 个文档，开始切片...
+2026-05-08 15:32:16,689 - RagService - INFO - knowledge_base.py:122 - ✂️ 切片完成，生成 96 个文本块
+2026-05-08 15:32:16,689 - RagService - INFO - build_db.py:64 - ✅ 文档切片完成，共生成 96 个文本块。
+2026-05-08 15:32:16,689 - RagService - INFO - build_db.py:70 - 正在写入向量库 [financial_db] ...
+2026-05-08 15:32:16,689 - RagService - ERROR - vector_store.py:36 - [VectorStore] 无效的分类键: financial_db
+2026-05-08 15:32:16,689 - RagService - INFO - build_db.py:76 - 🎉 知识库构建完成！
+2026-05-08 15:35:54,508 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:35:54,767 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:35:54,767 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data/finance_rag_knowledge 读取文档...
+2026-05-08 15:35:54,767 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:35:54,767 - RagService - INFO - knowledge_base.py:35 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 15:35:54,767 - RagService - INFO - knowledge_base.py:45 - 🔍 扫描知识库目录结构 (支持三级嵌套):
+2026-05-08 15:35:54,767 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 credit_base] 1_credit_base/
+2026-05-08 15:35:54,767 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_1_apply_rule/
+2026-05-08 15:35:54,768 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 准入基本条件.md
+2026-05-08 15:35:54,768 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 申请材料要求.md
+2026-05-08 15:35:54,768 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 禁止准入名单.md
+2026-05-08 15:35:54,768 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_2_quota_rule/
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则.md
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_3_fee_rate/
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 利率费率规则.md
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则2.md
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 overdue_debt] 2_overdue_debt/
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_1_overdue_define/
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 逾期分级定义.md
+2026-05-08 15:35:54,769 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_2_collect_rule/
+2026-05-08 15:35:54,770 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 催收管理规则.md
+2026-05-08 15:35:54,770 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_3_penalty_relief/
+2026-05-08 15:35:54,770 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 罚息与减免政策.md
+2026-05-08 15:35:54,770 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 risk_control] 3_risk_control/
+2026-05-08 15:35:54,770 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_1_risk_access/
+2026-05-08 15:35:54,770 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 风控准入规则.md
+2026-05-08 15:35:54,770 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_2_fraud_prevent/
+2026-05-08 15:35:54,771 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 反欺诈规则.md
+2026-05-08 15:35:54,771 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_3_compliance_rule/
+2026-05-08 15:35:54,771 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 合规监管规则.md
+2026-05-08 15:35:54,771 - RagService - INFO - knowledge_base.py:116 - ✅ 加载 12 个文档，开始切片...
+2026-05-08 15:35:54,772 - RagService - INFO - knowledge_base.py:122 - ✂️ 切片完成，生成 96 个文本块
+2026-05-08 15:35:54,772 - RagService - INFO - build_db.py:64 - ✅ 文档切片完成，共生成 96 个文本块。
+2026-05-08 15:35:54,772 - RagService - INFO - build_db.py:67 - 正在按分类写入 3 个向量库...
+2026-05-08 15:37:34,009 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:37:34,313 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:37:34,313 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data/finance_rag_knowledge 读取文档...
+2026-05-08 15:37:34,313 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:37:34,313 - RagService - INFO - knowledge_base.py:35 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 15:37:34,313 - RagService - INFO - knowledge_base.py:45 - 🔍 扫描知识库目录结构 (支持三级嵌套):
+2026-05-08 15:37:34,314 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 credit_base] 1_credit_base/
+2026-05-08 15:37:34,314 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_1_apply_rule/
+2026-05-08 15:37:34,314 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 准入基本条件.md
+2026-05-08 15:37:34,314 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 申请材料要求.md
+2026-05-08 15:37:34,314 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 禁止准入名单.md
+2026-05-08 15:37:34,315 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_2_quota_rule/
+2026-05-08 15:37:34,315 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则.md
+2026-05-08 15:37:34,315 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_3_fee_rate/
+2026-05-08 15:37:34,315 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 利率费率规则.md
+2026-05-08 15:37:34,316 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则2.md
+2026-05-08 15:37:34,316 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 overdue_debt] 2_overdue_debt/
+2026-05-08 15:37:34,316 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_1_overdue_define/
+2026-05-08 15:37:34,316 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 逾期分级定义.md
+2026-05-08 15:37:34,316 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_2_collect_rule/
+2026-05-08 15:37:34,316 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 催收管理规则.md
+2026-05-08 15:37:34,316 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_3_penalty_relief/
+2026-05-08 15:37:34,317 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 罚息与减免政策.md
+2026-05-08 15:37:34,317 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 risk_control] 3_risk_control/
+2026-05-08 15:37:34,317 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_1_risk_access/
+2026-05-08 15:37:34,317 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 风控准入规则.md
+2026-05-08 15:37:34,317 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_2_fraud_prevent/
+2026-05-08 15:37:34,317 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 反欺诈规则.md
+2026-05-08 15:37:34,318 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_3_compliance_rule/
+2026-05-08 15:37:34,318 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 合规监管规则.md
+2026-05-08 15:37:34,318 - RagService - INFO - knowledge_base.py:116 - ✅ 加载 12 个文档，开始切片...
+2026-05-08 15:37:34,319 - RagService - INFO - knowledge_base.py:122 - ✂️ 切片完成，生成 96 个文本块
+2026-05-08 15:37:34,319 - RagService - INFO - build_db.py:64 - ✅ 文档切片完成，共生成 96 个文本块。
+2026-05-08 15:37:34,319 - RagService - INFO - build_db.py:67 - 正在按分类写入 3 个向量库...
+2026-05-08 15:38:51,514 - RagService - INFO - build_db.py:36 - === 开始构建金融风控知识库流程 ===
+2026-05-08 15:38:51,810 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:38:51,810 - RagService - INFO - build_db.py:55 - 正在从 F:\Project\financial-rag-simple\data/finance_rag_knowledge 读取文档...
+2026-05-08 15:38:51,810 - RagService - INFO - knowledge_base.py:19 - [KnowledgeBase] 开始构建金融风控知识库...
+2026-05-08 15:38:51,810 - RagService - INFO - knowledge_base.py:35 - [KnowledgeBase] 实际读取路径: F:\Project\financial-rag-simple\data\finance_rag_knowledge
+2026-05-08 15:38:51,810 - RagService - INFO - knowledge_base.py:45 - 🔍 扫描知识库目录结构 (支持三级嵌套):
+2026-05-08 15:38:51,810 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 credit_base] 1_credit_base/
+2026-05-08 15:38:51,810 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_1_apply_rule/
+2026-05-08 15:38:51,811 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 准入基本条件.md
+2026-05-08 15:38:51,811 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 申请材料要求.md
+2026-05-08 15:38:51,811 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 禁止准入名单.md
+2026-05-08 15:38:51,811 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_2_quota_rule/
+2026-05-08 15:38:51,812 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则.md
+2026-05-08 15:38:51,812 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 1_3_fee_rate/
+2026-05-08 15:38:51,812 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 利率费率规则.md
+2026-05-08 15:38:51,812 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 授信额度规则2.md
+2026-05-08 15:38:51,812 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 overdue_debt] 2_overdue_debt/
+2026-05-08 15:38:51,812 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_1_overdue_define/
+2026-05-08 15:38:51,813 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 逾期分级定义.md
+2026-05-08 15:38:51,813 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_2_collect_rule/
+2026-05-08 15:38:51,813 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 催收管理规则.md
+2026-05-08 15:38:51,813 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 2_3_penalty_relief/
+2026-05-08 15:38:51,813 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 罚息与减免政策.md
+2026-05-08 15:38:51,813 - RagService - INFO - knowledge_base.py:60 -   ├─ [📚 risk_control] 3_risk_control/
+2026-05-08 15:38:51,813 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_1_risk_access/
+2026-05-08 15:38:51,815 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 风控准入规则.md
+2026-05-08 15:38:51,815 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_2_fraud_prevent/
+2026-05-08 15:38:51,815 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 反欺诈规则.md
+2026-05-08 15:38:51,815 - RagService - INFO - knowledge_base.py:69 -   │  ├─ [📁 规则组] 3_3_compliance_rule/
+2026-05-08 15:38:51,815 - RagService - INFO - knowledge_base.py:97 -   │  │  └─ [📄 已加载] 合规监管规则.md
+2026-05-08 15:38:51,815 - RagService - INFO - knowledge_base.py:116 - ✅ 加载 12 个文档，开始切片...
+2026-05-08 15:38:51,816 - RagService - INFO - knowledge_base.py:122 - ✂️ 切片完成，生成 96 个文本块
+2026-05-08 15:38:51,816 - RagService - INFO - build_db.py:64 - ✅ 文档切片完成，共生成 96 个文本块。
+2026-05-08 15:38:51,816 - RagService - INFO - build_db.py:67 - 正在按分类写入 3 个向量库...
+2026-05-08 15:38:51,817 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 15:38:52,838 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:53,527 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:54,298 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:54,933 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:55,576 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:56,190 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:56,780 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:57,375 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:58,005 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:58,691 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:38:59,348 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:00,059 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:00,704 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:01,338 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:01,976 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:02,586 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:03,228 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:03,827 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:04,398 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:05,000 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:05,572 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:06,222 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:06,864 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:07,511 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:08,157 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:08,791 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:09,391 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:09,974 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:10,586 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:11,240 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:11,878 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:13,083 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:13,754 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:14,389 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:15,048 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:15,678 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:16,343 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:17,000 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:17,605 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:18,235 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:18,855 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:19,533 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:20,139 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:20,763 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:21,405 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:22,045 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:22,740 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:23,377 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:24,019 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:24,633 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:25,310 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:25,927 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:26,554 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:27,173 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 credit_base 写入/更新 1 个文档
+2026-05-08 15:39:27,174 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 15:39:27,879 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:28,503 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:29,128 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:29,750 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:30,361 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:30,934 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:31,588 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:32,234 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:32,883 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:33,480 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:34,074 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:34,676 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:35,266 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:35,903 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:36,531 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:37,197 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:37,804 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:38,414 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:38,999 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:39,619 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 overdue_debt 写入/更新 1 个文档
+2026-05-08 15:39:39,619 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 15:39:40,368 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:41,026 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:41,639 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:42,291 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:42,896 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:43,497 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:44,074 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:44,675 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:45,327 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:45,980 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:46,620 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:47,302 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:47,925 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:48,612 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:49,583 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:50,193 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:50,797 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:51,451 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:52,069 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:52,695 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:53,339 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:53,974 - RagService - INFO - vector_store.py:70 - [VectorStore] 已向 risk_control 写入/更新 1 个文档
+2026-05-08 15:39:53,974 - RagService - INFO - build_db.py:75 - 🎉 知识库构建完成！
+2026-05-08 15:40:08,832 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 15:40:09,099 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:40:09,099 - RagService - INFO - rag_service.py:31 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 15:40:39,935 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生，我可以申请贷款吗
+2026-05-08 15:40:39,936 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，我可以申请贷款吗
+2026-05-08 15:40:39,936 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 15:40:39,936 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 15:40:42,838 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:41:41,013 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生，我可以贷款吗
+2026-05-08 15:41:41,014 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，我可以贷款吗
+2026-05-08 15:41:41,014 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 15:41:42,397 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: credit_base
+2026-05-08 15:41:45,076 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:43:58,874 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我已经逾期了还能申请贷款吗
+2026-05-08 15:43:58,874 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我已经逾期了还能申请贷款吗
+2026-05-08 15:43:58,874 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 15:44:14,233 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:44:43,233 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我逾期了怎么办
+2026-05-08 15:44:43,233 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我逾期了怎么办
+2026-05-08 15:44:43,233 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '逾期' -> 库: overdue_debt
+2026-05-08 15:44:43,233 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 15:45:01,027 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:47:56,312 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 
+2026-05-08 15:47:56,312 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 
+2026-05-08 15:47:56,312 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 15:47:57,587 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: risk_control
+2026-05-08 15:47:57,587 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 15:48:00,966 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:48:00,966 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生，我可以申请贷款吗
+2026-05-08 15:48:00,966 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，我可以申请贷款吗
+2026-05-08 15:48:00,966 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 15:48:06,897 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:48:29,220 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 
+2026-05-08 15:48:29,220 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 
+2026-05-08 15:48:29,220 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 15:48:30,852 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: risk_control
+2026-05-08 15:48:33,695 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:48:40,034 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生，我可以申请贷款吗
+2026-05-08 15:48:40,034 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，我可以申请贷款吗
+2026-05-08 15:48:40,034 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 15:48:46,106 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:51:55,970 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 15:51:56,282 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:51:56,282 - RagService - INFO - rag_service.py:31 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 15:52:11,243 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生，可以申请贷款吗
+2026-05-08 15:52:11,243 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以申请贷款吗
+2026-05-08 15:52:11,243 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 15:52:11,243 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 15:52:13,876 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:53:38,724 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 15:53:38,992 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:53:38,992 - RagService - INFO - rag_service.py:31 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 15:53:42,045 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 
+2026-05-08 15:53:42,046 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 
+2026-05-08 15:53:42,046 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 15:53:44,025 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: risk_control
+2026-05-08 15:53:44,025 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 15:53:47,143 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:53:47,144 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 
+2026-05-08 15:53:47,144 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 
+2026-05-08 15:53:47,144 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 15:53:48,666 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: risk_control
+2026-05-08 15:53:50,685 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 15:53:53,614 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 15:53:53,874 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 15:53:53,874 - RagService - INFO - rag_service.py:31 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 15:54:06,186 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生，可以贷款吗
+2026-05-08 15:54:06,186 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以贷款吗
+2026-05-08 15:54:06,186 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 15:54:07,622 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: credit_base
+2026-05-08 15:54:07,622 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 15:54:09,877 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 22:51:20,039 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 22:51:20,423 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 22:51:20,424 - RagService - INFO - rag_service.py:31 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 22:51:41,036 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生可以申请贷款吗
+2026-05-08 22:51:41,036 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生可以申请贷款吗
+2026-05-08 22:51:41,036 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '申请' -> 库: credit_base
+2026-05-08 22:51:41,036 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 22:51:43,575 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 22:53:42,154 - RagService - INFO - main.py:5 - === 金融风控 RAG 系统启动 ===
+2026-05-08 22:53:42,414 - RagService - INFO - vector_store.py:28 - [VectorStore] 向量库配置加载完成，共发现 3 个库配置。
+2026-05-08 22:53:42,414 - RagService - INFO - rag_service.py:31 - [RAGService] 系统启动完成，准备就绪。
+2026-05-08 22:53:55,817 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 催收时间是什么时候
+2026-05-08 22:53:55,817 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 催收时间是什么时候
+2026-05-08 22:53:55,817 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '催收' -> 库: overdue_debt
+2026-05-08 22:53:55,817 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: overdue_debt (懒加载)
+2026-05-08 22:54:06,216 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 22:55:07,895 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 你们会暴力催收吗
+2026-05-08 22:55:07,895 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 你们会暴力催收吗
+2026-05-08 22:55:07,895 - RagService - INFO - router_service.py:45 - [Router] 关键词命中: '催收' -> 库: overdue_debt
+2026-05-08 22:55:11,643 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 23:04:25,852 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 我是学生，可以贷款吗
+2026-05-08 23:04:25,853 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 我是学生，可以贷款吗
+2026-05-08 23:04:25,853 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 23:04:27,166 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: credit_base
+2026-05-08 23:04:27,166 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: credit_base (懒加载)
+2026-05-08 23:04:31,782 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
+2026-05-08 23:04:31,782 - RagService - INFO - rag_service.py:35 - [RAGService] 用户提问: 
+2026-05-08 23:04:31,782 - RagService - INFO - router_service.py:40 - [Router] 开始路由分析: 
+2026-05-08 23:04:31,782 - RagService - INFO - router_service.py:49 - [Router] 关键词未命中，启动 LLM 语义路由...
+2026-05-08 23:04:33,029 - RagService - INFO - router_service.py:62 - [Router] LLM 路由结果: risk_control
+2026-05-08 23:04:33,029 - RagService - INFO - vector_store.py:40 - [VectorStore] 正在加载向量库: risk_control (懒加载)
+2026-05-08 23:04:35,166 - RagService - INFO - rag_service.py:76 - [RAGService] 生成回答完成
