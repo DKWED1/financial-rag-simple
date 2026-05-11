@@ -1,10 +1,9 @@
 # api.py
 """FastAPI REST API 接口"""
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from service.rag_service import RAGService
-
-app = FastAPI(title="金融风控 RAG API")
 
 # 全局单例 RAG 服务
 rag_service = None
@@ -18,6 +17,16 @@ def get_rag_service():
     return rag_service
 
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """应用生命周期管理"""
+    get_rag_service()
+    yield
+
+
+app = FastAPI(title="金融风控 RAG API", lifespan=lifespan)
+
+
 class QuestionRequest(BaseModel):
     """问答请求"""
     question: str
@@ -27,12 +36,6 @@ class AnswerResponse(BaseModel):
     """问答响应"""
     answer: str
     source_db: str = None
-
-
-@app.on_event("startup")
-async def startup_event():
-    """启动时初始化 RAG 服务"""
-    get_rag_service()
 
 
 @app.get("/")

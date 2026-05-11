@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "financial-rag": {
+      "command": "python",
+      "args": ["F:/Project/financial-rag-simple/mcp_server.py"]
+    }
+  }
+}
