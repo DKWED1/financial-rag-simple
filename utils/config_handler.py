@@ -12,6 +12,7 @@ rag_config = load_config("rag.yml")
 prompts_config = load_config("prompts.yml")
 chroma_config = load_config("chroma.yml")
 router_config = load_config("router.yml")
+mysql_config = load_config("mysql.yml")
 
 # 从 rag.yml 提取的配置项
 KNOWLEDGE_BASE_CONFIG: dict = rag_config["knowledge_base_config"]

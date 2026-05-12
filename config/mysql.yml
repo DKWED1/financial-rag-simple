@@ -1,0 +1,8 @@
+host: localhost
+port: 3306
+database: financial_rag
+user: root
+password: "123456"
+charset: utf8mb4
+autocommit: true
+pool_size: 5
