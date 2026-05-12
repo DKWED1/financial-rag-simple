@@ -83,6 +83,8 @@
 ├── tests/                  # 单元测试（43 个用例）
 ├── api.py                  # FastAPI 入口
 └── mcp_server.py           # MCP Server 封装
+
+
 ## 测试覆盖
 覆盖率：43 个单元测试用例，覆盖配置加载、路由逻辑、缓存读写、向量检索等核心模块。
 命令：pytest tests/ -v
